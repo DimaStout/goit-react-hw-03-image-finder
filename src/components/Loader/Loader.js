@@ -1,19 +1,15 @@
-import { MagnifyingGlass } from 'react-loader-spinner';
+import { Bars } from 'react-loader-spinner';
 
 export const Loader = () => {
   return (
-    <MagnifyingGlass
+    <Bars
+      height="80"
+      width="80"
+      color="#4fa94d"
+      ariaLabel="bars-loading"
+      wrapperStyle={{}}
+      wrapperClass=""
       visible={true}
-      height="120"
-      width="120"
-      ariaLabel="MagnifyingGlass-loading"
-      wrapperStyle={{
-        justifyContent: 'center',
-        margin: '0 auto',
-      }}
-      wrapperClass="MagnifyingGlass-wrapper"
-      glassColor="#c0efff"
-      color="#e15b64"
     />
   );
 };
